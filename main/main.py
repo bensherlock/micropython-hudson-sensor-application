@@ -1,9 +1,9 @@
 #! /usr/bin/env python
 #
-# MicroPython USMART Sensor Application
+# MicroPython HUDSON Sensor Application
 #
-# This file is part of micropython-usmart-sensor-application.
-# https://github.com/bensherlock/micropython-usmart-sensor-application
+# This file is part of micropython-hudson-sensor-application.
+# https://github.com/bensherlock/micropython-hudson-sensor-application
 #
 #
 # MIT License
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-"""MicroPython USMART Sensor Application."""
+"""MicroPython HUDSON Sensor Application."""
 
 # import network
 import json
@@ -40,8 +40,7 @@ from ota_updater.main.ota_updater import OTAUpdater
 import jotter
 
 # Add your own ota updateable application modules to this list.
-ota_modules = ['mainloop', 'ota_updater', 'pybd_expansion', 'sensor_payload', 'uac_localisation', 'uac_modem',
-               'uac_network']
+ota_modules = ['mainloop', 'ota_updater', 'pybd_expansion', 'uac_modem', 'uac_network']
 
 
 def load_wifi_config():
