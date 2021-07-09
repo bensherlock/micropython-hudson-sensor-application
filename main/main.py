@@ -146,15 +146,15 @@ def download_and_install_updates_if_available():
 
 def boot():
     # Check reason for reset - only update if power on reset.
-    try:
-        if machine.reset_cause() == machine.PWRON_RESET:
-            download_and_install_updates_if_available()  # commented out during development
-    except Exception as the_exception:
-        jotter.get_jotter().jot_exception(the_exception)
-        import sys
-        sys.print_exception(the_exception)
-        pass
-        # Log to file
+    #try:
+    #    if machine.reset_cause() == machine.PWRON_RESET:
+    #         download_and_install_updates_if_available()  # commented out during development
+    #except Exception as the_exception:
+    #    jotter.get_jotter().jot_exception(the_exception)
+    #    import sys
+    #    sys.print_exception(the_exception)
+    #    pass
+
 
     # Manual OTA request
     try:
