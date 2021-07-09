@@ -10,7 +10,7 @@ cd ..
 # mainloop
 cd main/mainloop
 git init .
-git remote add origin https://github.com/bensherlock/micropython-usmart-hudson-mainloop.git
+git remote add origin https://github.com/bensherlock/micropython-hudson-sensor-mainloop.git
 git pull origin master
 cd ../..
 
@@ -20,7 +20,6 @@ git init .
 git remote add origin https://github.com/bensherlock/micropython-pybd-expansion.git
 git pull origin master
 cd ../..
-
 
 # uac_modem
 cd main/uac_modem
@@ -33,5 +32,5 @@ cd ../..
 cd main/uac_network
 git init .
 git remote add origin https://github.com/bensherlock/micropython-hudson-network.git
-git pull origin master
+git pull origin main
 cd ../..
